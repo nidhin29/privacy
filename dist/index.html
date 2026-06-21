@@ -360,10 +360,20 @@
                 </div>
             </section>
 
-            <!-- 4. On-Device AI Processing (Qwen/Gemma LLM) -->
+            <!-- 4. On-Device AI Processing (Qwen LLM) -->
             <section id="ai-processing" class="policy-section">
-                <h2>4. On-Device AI Processing (Qwen/Gemma LLM)</h2>
-                <p>Spendy utilizes local Large Language Model (LLM) inference (Qwen/Gemma) running natively on your device's CPU/GPU. The semantic classification of your transaction descriptions into budget categories happens completely offline, ensuring your reading and spending habits are never exposed to commercial AI servers.</p>
+                <h2>4. On-Device AI Processing (Qwen LLM)</h2>
+                <p>Spendy utilizes local Large Language Model (LLM) inference (Qwen) running natively on your device's CPU/GPU. The semantic classification of your transaction descriptions into budget categories happens completely offline, ensuring your reading and spending habits are never exposed to commercial AI servers.</p>
+                
+                <div class="note-box" style="margin-bottom: 24px;">
+                    <svg class="note-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div>
+                        <strong>Model Credit & Disclaimer:</strong> The local AI capabilities are powered by open-source model weights (specifically the <strong>Qwen</strong> model series developed by <strong>Alibaba Cloud</strong>). Spendy is not affiliated with, sponsored by, or endorsed by Alibaba Cloud. We merely integrate their open-source model for offline execution. Any model-related inaccuracies, hallucinations, biases, or software flaws inherent to the underlying AI model are the sole responsibility of the model developers. The user assumes all responsibilities and risks for utilizing this model on their hardware.
+                    </div>
+                </div>
 
                 <!-- Dynamic/Interactive Local AI Processing Flow Diagram -->
                 <div class="ai-diagram-container">
@@ -396,7 +406,7 @@
                                     <path d="M9 1V2M15 1V2M9 22V23M15 22V23M1 9H2M1 15H2M22 9H23M22 15H23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                 </svg>
                             </div>
-                            <span>Local AI Model (Qwen/Gemma LLM)</span>
+                            <span>Local AI Model (Qwen LLM)</span>
                             <div class="sub-label">Processing strictly on CPU/GPU</div>
                         </div>
 
