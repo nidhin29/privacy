@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Privacy Policy - Spendy (100% Offline-First Finance)</title>
+    <meta name="description" content="Read the Privacy Policy for Spendy, a 100% offline-first finance tracker. Learn how we protect your transaction data, SMS alerts, and camera scans entirely on-device with zero cloud footprint.">
+    <meta name="author" content="NidhinV">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Spendy - 100% Offline-First Privacy Policy">
+    <meta property="og:description" content="Spendy processes all financial transaction tracking, SMS parsing, local AI analysis, and database storage entirely on your local device. Zero cloud, absolute privacy.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/nidhinv/spendy/main/assets/privacy-banner.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Spendy - Offline-First Privacy Policy">
+    <meta property="twitter:description" content="All financial transaction tracking, local AI classification, and database storage are performed entirely on your local device.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Toast Notification for Interactions -->
+    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <span class="toast-icon"></span>
+        <span class="toast-message">Message copied to clipboard!</span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <svg class="app-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="6" width="18" height="13" rx="3" stroke="currentColor" stroke-width="2"/>
+                    <path d="M3 10H21" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="17" cy="14" r="1" fill="currentColor"/>
+                    <path d="M12 6V3M8 6V4M16 6V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M9 14.5L11 16.5L15 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="app-name">Spendy</span>
+                <span class="badge badge-success">Offline-First</span>
+            </div>
+
+            <!-- Search and Actions Bar -->
+            <div class="header-actions">
+                <div class="search-wrapper">
+                    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <input type="text" id="search-input" placeholder="Search privacy topics... (Press '/')" aria-label="Search privacy policy">
+                    <span class="search-kbd">/</span>
+                    <button id="search-clear" class="search-clear" aria-label="Clear search" style="display: none;">&times;</button>
+                </div>
+
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode">
+                    <!-- Light Mode (Sun) Icon -->
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <!-- Dark Mode (Moon) Icon -->
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="layout-container">
+        
+        <!-- Table of Contents Sidebar -->
+        <aside class="sidebar">
+            <nav class="toc-nav" aria-label="Table of Contents">
+                <div class="toc-title">ON THIS PAGE</div>
+                <ul id="toc-list">
+                    <li><a href="#intro" class="toc-link active">1. Introduction</a></li>
+                    <li><a href="#data-types" class="toc-link">2. Data Processed</a></li>
+                    <li><a href="#permissions" class="toc-link">3. Device Permissions</a></li>
+                    <li><a href="#ai-processing" class="toc-link">4. Local AI Engine</a></li>
+                    <li><a href="#backup" class="toc-link">5. Cloud Backup</a></li>
+                    <li><a href="#retention" class="toc-link">6. Retention & Deletion</a></li>
+                    <li><a href="#children" class="toc-link">7. Children's Privacy</a></li>
+                    <li><a href="#changes" class="toc-link">8. Policy Updates</a></li>
+                    <li><a href="#contact" class="toc-link">9. Contact Support</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            
+            <!-- Hero Title -->
+            <section class="hero-section">
+                <h1>Privacy Policy for Spendy</h1>
+                <div class="meta-info">
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 2V6M8 2V6M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Last Updated: June 21, 2026
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        3 min read
+                    </span>
+                    <button id="print-btn" class="btn btn-secondary btn-sm" aria-label="Print or download PDF">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9V2H18V9M6 18H4C2.89543 18 2 17.1046 2 16V11C2 9.89543 2.89543 9 4 9H20C21.1046 9 22 9.89543 22 11V16C22 17.1046 21.1046 18 20 18H18M6 14H18V22H6V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Print / PDF
+                    </button>
+                </div>
+
+                <!-- 100% Offline-First Pledge Banner -->
+                <div class="pledge-card">
+                    <div class="pledge-glowing-effect"></div>
+                    <div class="pledge-header">
+                        <div class="pulsing-shield">
+                            <svg class="shield-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="var(--success-alpha-1)" stroke="var(--success)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M9 11l2 2 4-4" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="pulse-dot"></span>
+                        </div>
+                        <h3>100% Offline-First Privacy Pledge</h3>
+                    </div>
+                    <p class="pledge-text">
+                        Spendy is built with a <strong>zero-cloud-footprint architecture</strong>. All financial transaction tracking, SMS interception, local AI model analysis, and database storage are performed <strong>entirely on your local device</strong>. No transactional data is ever transmitted, uploaded, shared, or sold to remote servers or third parties.
+                    </p>
+                    <div class="pledge-features">
+                        <div class="pledge-feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>No Login Required</span>
+                        </div>
+                        <div class="pledge-feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.36 6.64a9 9 0 11-12.73 0M12 2v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Works Fully Offline</span>
+                        </div>
+                        <div class="pledge-feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>100% Encrypted Backups</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 1. Introduction -->
+            <section id="intro" class="policy-section">
+                <h2>1. Introduction</h2>
+                <p>This Privacy Policy describes how Spendy ("we," "our," or "the Application"), developed by <strong>NidhinV</strong>, processes, stores, and protects your information. By using Spendy, you consent to the data practices described in this policy.</p>
+                <div class="note-box">
+                    <svg class="note-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div>
+                        <strong>What is Offline-First?</strong> It means the core database, ML classification engines, and storage reside completely inside your phone's sandbox storage. No user accounts are tracked on our servers.
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Types of Data Processed -->
+            <section id="data-types" class="policy-section">
+                <h2>2. Types of Data Processed</h2>
+                <p>Because Spendy is offline-first, all data processed remains strictly within the application's local sandbox storage directory. The app does not transmit this data to us or any third parties.</p>
+                
+                <div class="data-types-grid">
+                    <div class="data-card">
+                        <div class="data-card-icon-wrapper wallet-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 12V8H6a2 2 0 01-2-2 2 2 0 012-2h12v4M4 6v12a2 2 0 002 2h14v-4M18 12h4v4h-4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Financial Transactions</h3>
+                        <p>Records of your income, expenses, accounts, categories, and savings goals mapped and classified locally.</p>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="data-card-icon-wrapper message-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>SMS Transaction Logs</h3>
+                        <p>Parsed text metadata (such as amount, transaction type, and merchant name) extracted from incoming SMS bank alerts.</p>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="data-card-icon-wrapper user-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 21V19C19 17.9391 18.5786 16.9217 17.8284 16.1716C17.0783 15.4214 16.0609 15 15 15H9C7.93913 15 6.92172 15.4214 6.17157 16.1716C5.42143 16.9217 5 17.9391 5 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Account Details</h3>
+                        <p>Wallet names, custom bank names, and the last 4 digits of your account/card suffix to help group alerts.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Device Permissions & How They Are Used -->
+            <section id="permissions" class="policy-section">
+                <h2>3. Device Permissions & How They Are Used</h2>
+                <p>To enable intelligent tracking and automated workflows, Spendy requires specific Android system permissions. The application uses these permissions exclusively on-device, as detailed below:</p>
+
+                <!-- Interactive Permissions Grid -->
+                <div class="permissions-container">
+                    
+                    <!-- SMS Permission Card -->
+                    <div class="permission-item" data-expanded="false">
+                        <div class="permission-header">
+                            <div class="permission-title-group">
+                                <div class="permission-icon sms-color">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                        <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="permission-meta">
+                                    <h3>SMS Permissions</h3>
+                                    <code>RECEIVE_SMS</code> & <code>READ_SMS</code>
+                                </div>
+                            </div>
+                            <span class="local-only-badge">Local-Only Processing</span>
+                            <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="permission-content">
+                            <p><strong>Usage:</strong> Used to automatically intercept and parse incoming bank transaction alerts in real time.</p>
+                            <p><strong>Privacy Guard:</strong> Incoming SMS content is filtered locally on your device. Only alerts matching specific financial patterns (like debited/credited alerts) are analyzed. The SMS text is parsed by our local regular expression engines and on-device AI algorithms. <strong>No SMS data ever leaves your device or is seen by developers.</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Camera Permission Card -->
+                    <div class="permission-item" data-expanded="false">
+                        <div class="permission-header">
+                            <div class="permission-title-group">
+                                <div class="permission-icon camera-color">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="13" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="permission-meta">
+                                    <h3>Camera Access & OCR Scanning</h3>
+                                    <code>CAMERA</code>
+                                </div>
+                            </div>
+                            <span class="local-only-badge">Local-Only Processing</span>
+                            <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="permission-content">
+                            <p><strong>Usage:</strong> Used to capture photos of physical store purchase receipts to scan, extract items, and create structured itemized entries.</p>
+                            <p><strong>Privacy Guard:</strong> Optical Character Recognition (OCR) is performed entirely on-device using local ML Kit models. Images are processed in RAM and are not uploaded to any cloud server or analytics tracker.</p>
+                        </div>
+                    </div>
+
+                    <!-- Microphone Permission Card -->
+                    <div class="permission-item" data-expanded="false">
+                        <div class="permission-header">
+                            <div class="permission-title-group">
+                                <div class="permission-icon mic-color">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M19 10v1a7 7 0 0 1-14 0v-1M12 19v4M8 23h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="permission-meta">
+                                    <h3>Microphone Access & Speech-to-Text</h3>
+                                    <code>RECORD_AUDIO</code>
+                                </div>
+                            </div>
+                            <span class="local-only-badge">Local-Only Processing</span>
+                            <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="permission-content">
+                            <p><strong>Usage:</strong> Used to record voice logs of manual expenses to let you log transactions hands-free.</p>
+                            <p><strong>Privacy Guard:</strong> Speech-to-text recognition is processed locally on your phone. Audio waveforms are analyzed locally and transcripts are converted to structured transaction parameters directly in the app. No audio recordings are transmitted or stored remotely.</p>
+                        </div>
+                    </div>
+
+                    <!-- Biometric Card -->
+                    <div class="permission-item" data-expanded="false">
+                        <div class="permission-header">
+                            <div class="permission-title-group">
+                                <div class="permission-icon biometric-color">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M12 6v6M12 16h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 12a4 4 0 018 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="permission-meta">
+                                    <h3>Biometric Authentication</h3>
+                                    <code>USE_BIOMETRIC</code>
+                                </div>
+                            </div>
+                            <span class="local-only-badge">Local-Only Processing</span>
+                            <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="permission-content">
+                            <p><strong>Usage:</strong> Used to unlock your personal App Vault and Settings lock to prevent unauthorized physical access to your financial data.</p>
+                            <p><strong>Privacy Guard:</strong> Biometric verification is managed entirely by your Android operating system's secure element (Keystore API). Spendy never gains access to, processes, or stores your biometric credentials (fingerprints or face models).</p>
+                        </div>
+                    </div>
+
+                    <!-- Local Storage Card -->
+                    <div class="permission-item" data-expanded="false">
+                        <div class="permission-header">
+                            <div class="permission-title-group">
+                                <div class="permission-icon storage-color">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="permission-meta">
+                                    <h3>Local Storage (Read/Write)</h3>
+                                    <code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code>
+                                </div>
+                            </div>
+                            <span class="local-only-badge">Local-Only Processing</span>
+                            <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="permission-content">
+                            <p><strong>Usage:</strong> Used to export transaction logs as CSV or PDF documents to your device storage, and to save backup files locally.</p>
+                            <p><strong>Privacy Guard:</strong> The app only accesses folder paths that you explicitly choose. It does not scan your personal media library or files.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 4. On-Device AI Processing (Qwen/Gemma LLM) -->
+            <section id="ai-processing" class="policy-section">
+                <h2>4. On-Device AI Processing (Qwen/Gemma LLM)</h2>
+                <p>Spendy utilizes local Large Language Model (LLM) inference (Qwen/Gemma) running natively on your device's CPU/GPU. The semantic classification of your transaction descriptions into budget categories happens completely offline, ensuring your reading and spending habits are never exposed to commercial AI servers.</p>
+
+                <!-- Dynamic/Interactive Local AI Processing Flow Diagram -->
+                <div class="ai-diagram-container">
+                    <div class="ai-diagram-title">On-Device AI Architecture (Zero Cloud Footprint)</div>
+                    <div class="ai-diagram">
+                        
+                        <!-- Left Side: Inputs -->
+                        <div class="diagram-node" id="node-inputs">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>Inputs (SMS, Receipts, Voice)</span>
+                        </div>
+
+                        <!-- Arrow 1 -->
+                        <div class="diagram-arrow" id="arrow-1">
+                            <svg viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10H50M50 10L42 5M50 10L42 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <!-- Center: Local AI Model -->
+                        <div class="diagram-node active-pulse" id="node-model">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M9 9h6v6H9z" fill="var(--primary-alpha-2)" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M9 1V2M15 1V2M9 22V23M15 22V23M1 9H2M1 15H2M22 9H23M22 15H23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <span>Local AI Model (Qwen/Gemma LLM)</span>
+                            <div class="sub-label">Processing strictly on CPU/GPU</div>
+                        </div>
+
+                        <!-- Arrow 2 -->
+                        <div class="diagram-arrow" id="arrow-2">
+                            <svg viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10H50M50 10L42 5M50 10L42 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <!-- Right Side: Database -->
+                        <div class="diagram-node" id="node-db">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>Secure Local SQLite DB</span>
+                            <div class="sub-label">Sandbox encrypted storage</div>
+                        </div>
+
+                        <!-- Forbidden Top Link to Remote Cloud -->
+                        <div class="cloud-leak-barrier">
+                            <div class="cloud-node disabled-cloud">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 19A5.5 5.5 0 0 0 18 8.02c-.08-.02-.15-.05-.22-.08A7 7 0 0 0 4.07 10.14c.09-.07.2-.12.31-.14A5.5 5.5 0 0 0 5.5 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 2l20 20" stroke="var(--danger)" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                                <span>Commercial AI Cloud</span>
+                            </div>
+                            <div class="blocked-path">
+                                <span class="lock-icon">🔒</span>
+                                <span class="barrier-text">No Connection Allowed</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Optional Cloud Backup (Google Drive Integration) -->
+            <section id="backup" class="policy-section">
+                <h2>5. Optional Cloud Backup (Google Drive Integration)</h2>
+                <p>You may voluntarily connect your Google Account to back up your database to your personal Google Drive storage space:</p>
+                
+                <div class="backup-features-list">
+                    <div class="backup-card">
+                        <div class="backup-badge-wrapper">
+                            <span class="badge badge-primary">AES-256</span>
+                        </div>
+                        <h3>Military-Grade Local Encryption</h3>
+                        <p>Prior to being uploaded, your backup file is encrypted on-device using AES-256 standard encryption. Your database is unreadable without your local credentials. Even if someone accesses your Google Drive, they cannot decrypt your database file without your unique security keys which never leave your device.</p>
+                    </div>
+
+                    <div class="backup-card">
+                        <div class="backup-badge-wrapper">
+                            <span class="badge badge-success">Direct Sync</span>
+                        </div>
+                        <h3>Direct Synchronization</h3>
+                        <p>Data is transferred directly from your device to your personal Google Drive storage space. We do not host intermediate servers, store your files, or have access to your backups, Google OAuth tokens, or decryption keys.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Data Retention & Deletion -->
+            <section id="retention" class="policy-section">
+                <h2>6. Data Retention & Deletion</h2>
+                <p>Since all data is stored locally, it is retained until you choose to delete it. You can instantly wipe your entire local SQLite database, custom categories, budgets, and keys by using the <strong>"Wipe All Data"</strong> button inside the settings page.</p>
+
+                <!-- Interactive Data Wipe Simulator -->
+                <div class="wipe-simulator-card">
+                    <div class="simulator-header">
+                        <h4>Local Data Control Simulator</h4>
+                        <span class="status-indicator online" id="db-status">Active Database Connected</span>
+                    </div>
+                    <p class="simulator-desc">Test how Spendy handles data removal. Clicking the button below simulates the local SQLite database wiping sequence inside the mobile app sandbox.</p>
+                    
+                    <div class="simulation-area">
+                        <div class="db-visualizer" id="db-visualizer">
+                            <div class="db-row"><span class="db-cell-key">Account Details</span> <span class="db-cell-val">✓ SECURE</span></div>
+                            <div class="db-row"><span class="db-cell-key">SMS Parsed Logs</span> <span class="db-cell-val">✓ SECURE</span></div>
+                            <div class="db-row"><span class="db-cell-key">Local LLM Cache</span> <span class="db-cell-val">✓ SECURE</span></div>
+                            <div class="db-row"><span class="db-cell-key">AES Backup Keys</span> <span class="db-cell-val">✓ SECURE</span></div>
+                        </div>
+
+                        <button id="wipe-data-btn" class="btn btn-danger">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 11v6M14 11v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Wipe All Data
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. Children's Privacy -->
+            <section id="children" class="policy-section">
+                <h2>7. Children's Privacy</h2>
+                <p>Our Application does not address anyone under the age of 16. We do not knowingly collect or store personal information. Since all processing is local, parents can manage the local device databases directly and inspect any stored data using device managers.</p>
+            </section>
+
+            <!-- 8. Changes to this Privacy Policy -->
+            <section id="changes" class="policy-section">
+                <h2>8. Changes to this Privacy Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will post any updates directly in the repository and update the "Last Updated" date at the top of this document. We recommend visiting this page occasionally to check for updates.</p>
+            </section>
+
+            <!-- 9. Contact Us -->
+            <section id="contact" class="policy-section">
+                <h2>9. Contact Us</h2>
+                <p>If you have any questions or feedback regarding our local privacy architecture, encryption standards, or offline processing algorithms, feel free to reach out to us:</p>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Developer & Support Contact</h3>
+                        <p>NidhinV — Lead Architect</p>
+                        <div class="email-copy-group">
+                            <span id="email-text" class="email-text">nidhinvninan29@gmail.com</span>
+                            <button id="copy-email-btn" class="btn btn-secondary btn-xs" aria-label="Copy email to clipboard">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2026 Spendy. Developed by NidhinV.</p>
+                <p class="pledge-mini-label">100% Offline, AES-256 Encrypted, Zero Cloud Footprint.</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- Script File -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
