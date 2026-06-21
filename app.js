@@ -325,12 +325,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ==========================================
-    // 8. Print Document Integration
-    // ==========================================
-    const printBtn = document.getElementById('print-btn');
-    printBtn.addEventListener('click', () => {
-        window.print();
-    });
+
 
 });
