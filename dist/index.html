@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary SEO Meta Tags -->
-    <title>Privacy Policy - Spendy (100% Offline-First Finance)</title>
-    <meta name="description" content="Read the Privacy Policy for Spendy, a 100% offline-first finance tracker. Learn how we protect your transaction data, SMS alerts, and camera scans entirely on-device with zero cloud footprint.">
+    <title>Privacy Policy - Spendy (Offline-First Finance)</title>
+    <meta name="description" content="Read how Spendy stores financial records locally, processes SMS and receipt scans, uses device speech recognition, and supports optional Google Drive backups.">
     <meta name="author" content="Nidhin V Ninan">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Spendy - 100% Offline-First Privacy Policy">
-    <meta property="og:description" content="Spendy processes all financial transaction tracking, SMS parsing, local AI analysis, and database storage entirely on your local device. Zero cloud, absolute privacy.">
+    <meta property="og:title" content="Spendy - Offline-First Privacy Policy">
+    <meta property="og:description" content="Spendy stores records locally and runs its Qwen model on-device. Device speech services and optional Google Drive backups may use online processing.">
     <meta property="og:image" content="https://raw.githubusercontent.com/nidhinv/spendy/main/assets/privacy-banner.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Spendy - Offline-First Privacy Policy">
-    <meta property="twitter:description" content="All financial transaction tracking, local AI classification, and database storage are performed entirely on your local device.">
+    <meta property="twitter:description" content="Records and Qwen inference stay on-device. Voice recognition may use your device provider's servers; Drive backups are optional.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,10 +137,10 @@
                             </svg>
                             <span class="pulse-dot"></span>
                         </div>
-                        <h3>100% Offline-First Privacy Pledge</h3>
+                        <h3>Offline-First Privacy</h3>
                     </div>
                     <p class="pledge-text">
-                        Spendy is built with a <strong>zero-cloud-footprint architecture</strong>. All financial transaction tracking, SMS interception, local AI model analysis, and database storage are performed <strong>entirely on your local device</strong>. No transactional data is ever transmitted, uploaded, shared, or sold to remote servers or third parties.
+                        Spendy stores financial records in <strong>private app storage on your device</strong>. SMS parsing and Qwen inference run locally. Optional Google Drive backups and exports send data to destinations you choose. Your device's speech-recognition service may process voice input online; fully offline voice recognition is not guaranteed.
                     </p>
                     <div class="pledge-features">
                         <div class="pledge-feature-item">
@@ -154,13 +154,13 @@
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.36 6.64a9 9 0 11-12.73 0M12 2v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Works Fully Offline</span>
+                            <span>Offline Record Keeping</span>
                         </div>
                         <div class="pledge-feature-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/>
                             </svg>
-                            <span>100% Encrypted Backups</span>
+                            <span>Optional Drive Backup</span>
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
             <!-- 2. Types of Data Processed -->
             <section id="data-types" class="policy-section">
                 <h2>2. Types of Data Processed</h2>
-                <p>Because Spendy is offline-first, all data processed remains strictly within the application's local sandbox storage directory. The app does not transmit this data to us or any third parties.</p>
+                <p>Financial records are stored in the application's private device storage. If you choose Drive backup or export, copies leave that storage. Voice input is handled by the device's speech-recognition service, which may use online processing.</p>
                 
                 <div class="data-types-grid">
                     <div class="data-card">
@@ -222,7 +222,7 @@
             <!-- 3. Device Permissions & How They Are Used -->
             <section id="permissions" class="policy-section">
                 <h2>3. Device Permissions & How They Are Used</h2>
-                <p>To enable intelligent tracking and automated workflows, Spendy requires specific Android system permissions. The application uses these permissions exclusively on-device, as detailed below:</p>
+                <p>To enable intelligent tracking and automated workflows, Spendy requires specific Android system permissions. How these permissions are used is detailed below, including the device speech-recognition service:</p>
 
                 <!-- Interactive Permissions Grid -->
                 <div class="permissions-container">
@@ -249,7 +249,7 @@
                         </div>
                         <div class="permission-content">
                             <p><strong>Usage:</strong> Used to automatically intercept and parse incoming bank transaction alerts in real time.</p>
-                            <p><strong>Privacy Guard:</strong> Incoming SMS content is filtered locally on your device. Only alerts matching specific financial patterns (like debited/credited alerts) are analyzed. The SMS text is parsed by our local regular expression engines and on-device AI algorithms. <strong>No SMS data ever leaves your device or is seen by developers.</strong></p>
+                            <p><strong>Privacy Guard:</strong> Incoming SMS content is filtered locally on your device. Only alerts matching specific financial patterns (like debited/credited alerts) are analyzed. The SMS text is parsed by our local regular expression engines and on-device AI algorithms. <strong>SMS parsing runs locally. Saved SMS-derived records may be included in backups or exports you choose to create.</strong></p>
                         </div>
                     </div>
 
@@ -275,7 +275,7 @@
                         </div>
                         <div class="permission-content">
                             <p><strong>Usage:</strong> Used to capture photos of physical store purchase receipts to scan, extract items, and create structured itemized entries.</p>
-                            <p><strong>Privacy Guard:</strong> Optical Character Recognition (OCR) is performed entirely on-device using local ML Kit models. Images are processed in RAM and are not uploaded to any cloud server or analytics tracker.</p>
+                            <p><strong>Privacy Guard:</strong> Optical Character Recognition (OCR) is performed entirely on-device using local ML Kit models. Receipt images may also be retained in app storage and included in backups where supported. Spendy does not upload images to a cloud OCR service.</p>
                         </div>
                     </div>
 
@@ -294,14 +294,14 @@
                                     <code>RECORD_AUDIO</code>
                                 </div>
                             </div>
-                            <span class="local-only-badge">Local-Only Processing</span>
+                            <span class="local-only-badge">Device Speech Service</span>
                             <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                         <div class="permission-content">
                             <p><strong>Usage:</strong> Used to record voice logs of manual expenses to let you log transactions hands-free.</p>
-                            <p><strong>Privacy Guard:</strong> Speech-to-text recognition is processed locally on your phone. Audio waveforms are analyzed locally and transcripts are converted to structured transaction parameters directly in the app. No audio recordings are transmitted or stored remotely.</p>
+                            <p><strong>Privacy Guard:</strong> Speech recognition uses the service configured on your device. Depending on the provider, installed language support and settings, audio may be sent to that provider's servers under its privacy policy. Spendy does not guarantee offline recognition. The resulting transcript is processed by the app's local model to prepare transaction details.</p>
                         </div>
                     </div>
 
@@ -328,7 +328,7 @@
                         </div>
                         <div class="permission-content">
                             <p><strong>Usage:</strong> Used to unlock your personal App Vault and Settings lock to prevent unauthorized physical access to your financial data.</p>
-                            <p><strong>Privacy Guard:</strong> Biometric verification is managed entirely by your Android operating system's secure element (Keystore API). Spendy never gains access to, processes, or stores your biometric credentials (fingerprints or face models).</p>
+                            <p><strong>Privacy Guard:</strong> Biometric verification is managed by your Android operating system. Spendy never gains access to, processes, or stores your biometric credentials (fingerprints or face models).</p>
                         </div>
                     </div>
 
@@ -377,7 +377,7 @@
 
                 <!-- Dynamic/Interactive Local AI Processing Flow Diagram -->
                 <div class="ai-diagram-container">
-                    <div class="ai-diagram-title">On-Device AI Architecture (Zero Cloud Footprint)</div>
+                    <div class="ai-diagram-title">On-Device Qwen Processing</div>
                     <div class="ai-diagram">
                         
                         <!-- Left Side: Inputs -->
@@ -387,7 +387,7 @@
                                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2"/>
                                 </svg>
                             </div>
-                            <span>Inputs (SMS, Receipts, Voice)</span>
+                            <span>Text Inputs &amp; Voice Transcripts</span>
                         </div>
 
                         <!-- Arrow 1 -->
@@ -427,7 +427,7 @@
                                 </svg>
                             </div>
                             <span>Secure Local SQLite DB</span>
-                            <div class="sub-label">Sandbox encrypted storage</div>
+                            <div class="sub-label">Private app storage; build 8 database is not app-encrypted</div>
                         </div>
 
                         <!-- Forbidden Top Link to Remote Cloud -->
@@ -459,8 +459,8 @@
                         <div class="backup-badge-wrapper">
                             <span class="badge badge-primary">AES-256</span>
                         </div>
-                        <h3>Military-Grade Local Encryption</h3>
-                        <p>Prior to being uploaded, your backup file is encrypted on-device using AES-256 standard encryption. Your database is unreadable without your local credentials. Even if someone accesses your Google Drive, they cannot decrypt your database file without your unique security keys which never leave your device.</p>
+                        <h3>Backup Encryption</h3>
+                        <p>Cloud backup encryption is separate from the live database. Build 8's local SQLite database does not have app-level encryption. Do not assume that receipt files, temporary files, CSV/PDF reports or every older backup format are encrypted. Backup protection depends on the app version, credentials and device security.</p>
                     </div>
 
                     <div class="backup-card">
@@ -468,7 +468,7 @@
                             <span class="badge badge-success">Direct Sync</span>
                         </div>
                         <h3>Direct Synchronization</h3>
-                        <p>Data is transferred directly from your device to your personal Google Drive storage space. We do not host intermediate servers, store your files, or have access to your backups, Google OAuth tokens, or decryption keys.</p>
+                        <p>Data is transferred directly from your device to your personal Google Drive storage space. We do not host an intermediate backup server. The app uses Google authorization to access your Drive backup; Google processes that transfer under its own policies.</p>
                     </div>
                 </div>
             </section>
@@ -508,7 +508,7 @@
             <!-- 7. Children's Privacy -->
             <section id="children" class="policy-section">
                 <h2>7. Children's Privacy</h2>
-                <p>Spendy is suitable for all age groups, including children (IARC 3+). Because our Application is 100% offline-first and requires no user registration, we do not collect, transmit, or store any personal information from any user, including children under the age of 13. All data remains strictly on the local device sandbox. Parents or guardians can inspect, manage, or delete this local database at any time by using the "Wipe All Data" button in the app settings or by clearing the application storage in device settings.</p>
+                <p>Spendy is suitable for all age groups, including children (IARC 3+). Spendy requires no app registration and keeps financial records in private device storage. The voice-service, export and optional Drive-backup processing described above also applies to younger users. Parents or guardians can inspect, manage, or delete this local database at any time by using the "Wipe All Data" button in the app settings or by clearing the application storage in device settings.</p>
             </section>
 
             <!-- 8. Changes to this Privacy Policy -->
@@ -549,7 +549,7 @@
             <!-- Footer -->
             <footer class="footer">
                 <p>&copy; 2026 Spendy. Developed by Nidhin V Ninan.</p>
-                <p class="pledge-mini-label">100% Offline, AES-256 Encrypted, Zero Cloud Footprint.</p>
+                <p class="pledge-mini-label">Local Records. On-Device Qwen. Optional Drive Backup.</p>
             </footer>
 
         </main>
